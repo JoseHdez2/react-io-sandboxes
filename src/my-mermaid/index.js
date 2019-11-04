@@ -1,8 +1,8 @@
-import Stuff from "../stuff";
+import IoSandbox from "../io-sandboxes";
 
 const mermaidLineRegex = /(-->)|(-\.->)|((--|-.|==)[\w\s]+?(--|.-|$1)>)/;
 
-class MyMermaid extends Stuff {
+class MyMermaid extends IoSandbox {
   process = input => {
     let lines = input.split("\n");
 

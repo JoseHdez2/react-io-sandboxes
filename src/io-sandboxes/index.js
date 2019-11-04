@@ -1,4 +1,5 @@
 import IoSandbox from "./IoSandbox";
+import Clipboardy from "clipboardy";
 const mergePatch = require("tiny-merge-patch").apply;
 
 const WIP = () => <p>WIP!</p>;
@@ -69,4 +70,16 @@ export class CountLines extends IoSandbox {
   process = input => {
     return input.split("\n").length;
   };
+
+  testPairs = [
+    [
+      `one
+two
+eleventy
+four lines`,
+      "4"
+    ]
+  ];
 }
+
+export default IoSandbox;
